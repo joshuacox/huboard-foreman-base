@@ -21,18 +21,18 @@ end
 
 desc "Exec bash in Docker image"
 task :enter do
-	sh 'docker exec -i -t `cat cid` /bin/bash'
+  sh 'docker exec -i -t `cat cid` /bin/bash'
 end
 
 desc "RM Docker image"
 task :rm_docker do
-	sh 'docker rm `cat cid`'
-	sh 'rm cid'
+  sh 'docker rm `cat cid`'
+  sh 'rm cid'
 end
 
 desc "Kill Docker image"
 task :kill do
-	sh 'docker kill `cat cid`'
+  sh 'docker kill `cat cid`'
 end
 
 desc "Build Docker image"
