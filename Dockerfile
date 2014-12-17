@@ -8,7 +8,7 @@ RUN apt-get -y install libcurl4-openssl-dev libssl-dev libmagickcore-dev libmagi
 ENV SEGMENTIO_KEY HUBOARD_SEGMENTIO_KEY
 RUN git clone -b master https://github.com/rauhryan/huboard.git /app
 #RUN cd /app; bundle install --deployment --without test development
-RUN cd /app; bundle install --deployment
+#RUN cd /app; bundle install --deployment
 RUN cd /app; sed -i 's/2.1.2/2.1.5/' Gemfile; rm Gemfile.lock
 RUN cd /app; bundle install --no-deployment
 RUN cd /app; bundle install --deployment --without test development
