@@ -1,4 +1,4 @@
-huboared-foreman-base
+huboard-foreman-base
 =====================
 
 Huboard Enterprise Base Install with Foreman
