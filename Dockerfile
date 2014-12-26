@@ -1,4 +1,7 @@
 FROM octohost/ruby-2.1.2
+MAINTAINER Josh Cox <josh 'at' webhosting.coop>
+
+ENV HUBOARD_BASE_REFRESHED_AT 20141226
 
 RUN apt-get update
 RUN apt-get -y install nodejs supervisor
